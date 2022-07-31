@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+header {
+    background: #1F2937;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+    height: 40px;
+   
+}
+header h4 {
+    color: #F9FAF8;
+    font-size: 24px;
+}
+nav ul {
+    display: flex;
+    list-style: none;   
+    gap: 10px;
+    color: #E5E7EB;
+    margin-left:auto;
+    font-size: 18px;
+}
+/* first div part (this website is awesome)*/
+.head-div h2 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #F9FAF8;
+}
+
+.head-div p {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+.head-div{
+    height: 400px;
+    display: flex;
+    background-color: #1F2937;
+    width: 100%;
+    align-items: center;
+    /*border: 2px solid red;*/
+}
+
+img {
+    width: 400px;;
+    height:270px;
+}
