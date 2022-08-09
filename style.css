@@ -7,7 +7,7 @@ body{
    
 }
 header {
-    background: url(/img/the-big-4.png);
+    background: url(./img/the-big-4.png);
     background-repeat: no-repeat;
     background-size: cover;
     /*background: #1F2937;*/
