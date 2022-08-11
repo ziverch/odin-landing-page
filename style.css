@@ -13,57 +13,64 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     height: 1000px;
-
     width: auto;
-    /*background: #1F2937;*/
 }
-nav{
+nav {
+    padding-top: 18px;
     display: flex;
     align-items: center;
-    height: 40px;
-   
+    height: 60px;
 }
+
 header h4 {
-    color: #F9FAF8;
-    font-size: 28px;
+    color: black;
+    font-size: 48px;
+    font-weight: 900;
+    padding: 25px;
+    display: none;
+}
+
+#hed{
+    color: black;
+    font-size: 48px;
     font-weight: 900;
     padding: 25px;
 }
+
 nav ul {
     margin:10px;
     display: flex;
     list-style: none;   
-    gap: 15px;
-    color: #E5E7EB;
+    gap: 25px;
     margin-left:auto;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 700;
     color: black;
+    padding: 10px;
 }
+
 /* first div part (this website is awesome)*/
-.head-div h2 {
+
+.head-sub-div h2 {
     font-size: 48px;
     font-weight: 800;
-    color: #111111;
+    color: #c7c7c7;
 }
+
 .head-div p {
     font-size: 18px;
     color: #E5E7EB;
 }
+
 .head-div{
     width: 100vw;
-    height: 500px;
+    height: 900px;
     display: flex;
-    /*background-color: #1F2937;*/
     width: 100%;
     align-items: center;
     justify-content: space-around;
-    /*border: 2px solid red;*/
+    gap: 500px;
 }
-@media only screen and (max-width: 800px) {
-
-}
-
 
 .sub {
     display: flex; 
@@ -98,44 +105,32 @@ button {
     flex-wrap: wrap;
     margin-bottom: 10px;
 } 
+
 .head-p p {
     font-family: monospace;
     font-weight: 600;
     color: black;
 }
 
-@media only screen and (max-width: 800px) {
-    .head-sub-div{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-        text-align: center;
-        padding: 15px;
-        margin-top: 90px;
-    }
-  }
-
-  @media only screen and (max-width: 800px) {
-    .head-img{
-        display: none;
-    }
-  }
-
-.head-img {
-    width: 400px;
-    height:270px;
-    align-self: center;
+/*.head-img {
+    width: 500px;
+    height:600px;
+}*/
+#img-space  {
+    width: 600px;
+    height: 500px;
 }
 
 /*second div part*/
 
 /*header*/
+
 .snd-div {
     width:100%;
     text-align: center;
     background-color: #ffe5b4;
 }
+
 .snd-div h2{
     padding: 30px;
     font-size: 36px;
@@ -144,11 +139,8 @@ button {
 }
 
 /*flexed-images*/
+
 .items-container {
-/*
-margin-top: 40px;
-display:flex;
-justify-content: center;*/
 gap:30px;
 display: flex;
 flex-direction: row;
@@ -159,10 +151,6 @@ padding: 30px;
 } 
 
 .container{
-/*display: flex;
-align-items: center;
-flex-direction: column;
-max-width: 400px;*/
 padding: 6px;
 display: flex;
 flex-basis: calc(50% - 40px);
@@ -196,6 +184,7 @@ flex-direction: row;
         margin-bottom: 50px;
         }
 
+
 .items img{
     height: 100%; 
     width: 100%; 
@@ -208,9 +197,9 @@ flex-direction: row;
     object-fit: cover;
 }
 
-
 .blockquote{
     min-height: 600px;
+    height: 1000px;
     width: 100%;
     background: #E5E7EB;
     display: flex;
@@ -227,7 +216,6 @@ flex-direction: row;
     font-family: monospace;
     font-style: italic;
     line-height: 1.8; 
-
 }
 
 .text_credit{
@@ -235,7 +223,7 @@ flex-direction: row;
 }
 
 .blue-box-container{
-    height: 300px;
+    height: 700px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -271,4 +259,42 @@ footer {
     justify-content: center;
     font-weight: 700;
     font-size: 20px;
+}
+
+
+@media only screen and (max-width: 800px) {
+    nav ul {
+        display: none;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav h4 {
+        font-size: 40px;
+        display: block;
+    }
+
+    .head-sub-div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+        margin-top: 90px;
+    }
+
+    .head-p p {
+        font-size: 23px;
+    }
+
+    #hed {
+        display: none;
+    }
+
+    .head-img{
+        display: none;
+    }
 }
