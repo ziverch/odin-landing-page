@@ -44,7 +44,7 @@ nav ul {
 .head-div h2 {
     font-size: 48px;
     font-weight: 800;
-    color: #F9FAF8;
+    color: #111111;
 }
 .head-div p {
     font-size: 18px;
@@ -91,16 +91,18 @@ button {
 } 
 
 .head-p {
-    border-radius: 10px;
-    background: #5a84be;
     padding: 10px;
     display: flex;
     flex-direction: column;
     max-width: 200px;
     flex-wrap: wrap;
     margin-bottom: 10px;
-
 } 
+.head-p p {
+    font-family: monospace;
+    font-weight: 600;
+    color: black;
+}
 
 @media only screen and (max-width: 800px) {
     .head-sub-div{
@@ -204,4 +206,31 @@ flex-direction: row;
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+
+.blockquote{
+    height: 400px;
+    width: 100%;
+    background: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.blockquote_text {
+    margin: 10px 30px;
+    padding:25px;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: monospace;
+    font-style: italic;
+    line-height: 1.8;
+}
+
+.text_credit{
+    display: flex;
+   align-self: flex-end;
 }
